@@ -20,6 +20,7 @@ class Book(models.Model):
 
 # نموذج المكتبة
 class Library(models.Model):
+    LibraryProject/relationship_app/models.py
     name = models.CharField(max_length=255)
     books = models.ManyToManyField(Book)
 
